@@ -1,0 +1,53 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+
+%====================
+%
+% Files:        resume.tex: Main file
+%               _header.tex: header code
+%               TLCresume.sty: style file containing formatting details
+%               section/objective: https://www.indeed.com/career-advice/resumes-cover-letters/resume-objective-examples
+%               section/skills: table of skills
+%               section/experience: projects or roles
+%               section/education: schools and stuff
+%               section/activities: optional, could comment out in resume.tex.
+%
+%====================
+
+\usepackage{TLCresume}
+
+%====================
+% CONTACT INFORMATION
+%====================
+\def\name{Pranay Gupta} % Name Here
+\def\phone{(+91) 7908060253}
+\def\city{Kolkata, West Bengal, IN}
+\def\email{pranaygupta.aec@gmail.com}
+\def\LinkedIn{thepranaygupta} % linkedin.com/in/______
+\def\github{thepranaygupta} % github username
+\def\role{Full Stack Web Developer} % JOB TITLE
+
+\input{_header}
+\begin{document}
+\input{sections/objective}
+
+\section{Skills}
+\input{sections/skills}
+
+\section{Technical Experience}
+\input{sections/experience}
+
+\section{Projects}
+\input{sections/projects}
+
+\section{Education}
+\input{sections/education}
+
+% make a newpage wherever it is a clean break
+% \newpage
+
+\section{Activities}
+\input{sections/activities}
+
+
+\end{document}
